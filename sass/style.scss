@@ -1,0 +1,51 @@
+$color: black;
+$color1: white;
+$color2: #C4A0CC;
+$color3: #ABD8C9;
+$font1: "Aleo";
+$font-weight1: 400;
+$font-weight2: "bold";
+$margin: 0 auto;
+@mixin flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    background-color: $color;
+    margin: $margin;
+    padding-top: 20px;
+}
+
+#container{
+    max-width: 80%;
+    margin: $margin;
+    @include flexbox;
+}
+
+section{
+    width: 60%;
+
+    h1 {
+        color: $color1;
+        font-family: $font1;
+        font-weight: $font-weight2;
+    }
+    
+    h2 {
+        color: $color1;
+        font-family: $font1;
+        font-weight: $font-weight1;
+            span{
+                color: $color2;
+            }
+            a{
+                color: $color3;
+            }
+    }
+}
+
+aside {
+    width: 40%;
+}
+

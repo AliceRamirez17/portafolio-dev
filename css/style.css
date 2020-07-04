@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+#container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row; }
+
+section {
+  width: 60%; }
+  section h1 {
+    color: white;
+    font-family: "Aleo";
+    font-weight: "bold"; }
+  section h2 {
+    color: white;
+    font-family: "Aleo";
+    font-weight: 400; }
+    section h2 span {
+      color: #C4A0CC; }
+    section h2 a {
+      color: #ABD8C9; }
+
+aside {
+  width: 40%; }
