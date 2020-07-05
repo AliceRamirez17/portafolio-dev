@@ -1,41 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 $color: black;
 $color1: white;
 $color2: #C4A0CC;
 $color3: #ABD8C9;
 $font1: "Aleo";
+$font2: "Roboto", "sans-serif";
 $font-weight1: 400;
-$font-weight2: "bold";
+$font-weight2: 600;
+$font-weight3: 300;
 $margin: 0 auto;
+
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 @mixin flexbox {
     display: flex;
     flex-direction: row;
 }
+@mixin flexbox2 {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin family-weight($family, $weight, $color, $size) {
+    font-family: $family;
+    font-weight: $weight;
+    color: $color;
+    font-size: $size;
+}
+
+@mixin grid1($display, $cols, $rows) {
+    display: $display;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+}
+
+*{
+    margin: 0;
+}
 
 body{
+    font-size: 12px;
     background-color: $color;
-    margin: $margin;
-    padding-top: 20px;
 }
 
 #container{
     max-width: 80%;
+    height: 100vh;
     margin: $margin;
     @include flexbox;
+    align-items: center;
+    justify-content: space-between;
 }
 
 section{
-    width: 60%;
+    height: 80%;
+    @include flexbox2;
+    justify-content: space-evenly;
 
     h1 {
-        color: $color1;
-        font-family: $font1;
-        font-weight: $font-weight2;
+        @include family-weight($font1, $font-weight2, $color1, 4em);
     }
     
     h2 {
-        color: $color1;
-        font-family: $font1;
-        font-weight: $font-weight1;
+        @include family-weight($font1, $font-weight1, $color1, 5em);
             span{
                 color: $color2;
             }
@@ -43,9 +74,29 @@ section{
                 color: $color3;
             }
     }
+
+    h3 {
+        @include family-weight($font2, $font-weight3, $color1, 2em);
+    }
+
+    ul {
+        width: 30em;
+        list-style-type: none;
+        @include flexbox;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0;
+    }
 }
 
 aside {
-    width: 40%;
+    @include width-height(40em, 40em);
+    @include grid1(grid, repeat(8, 1fr), repeat(8, 1fr));
+
+    .photo{
+        height: 100%;
+        grid-column: 2 / 9;
+        grid-row: 2 / 9;
+    }
 }
 
