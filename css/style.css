@@ -6,83 +6,96 @@ body {
   font-size: 12px;
   background-color: black; }
 
-#container, #about {
+::-webkit-scrollbar {
+  width: 1em; }
+
+::-webkit-scrollbar-track {
+  background: black; }
+
+::-webkit-scrollbar-thumb {
+  background: #333333; }
+
+#container {
   max-width: 80%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+#info {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
-
-section {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; }
-  section h1 {
-    font-family: "Aleo";
-    font-weight: 600;
-    color: white;
-    font-size: 4em; }
-  section h2 {
-    font-family: "Aleo";
-    font-weight: 400;
-    color: white;
-    font-size: 5em; }
-    section h2 span {
-      color: #C4A0CC; }
-    section h2 a {
-      color: #ABD8C9; }
-  section h3 {
-    font-family: "Roboto", "sans-serif";
-    font-weight: 300;
-    color: white;
-    font-size: 2em; }
-  section ul {
-    width: 30em;
-    list-style-type: none;
+  #info section {
+    height: 80%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 0; }
-
-aside {
-  width: 40em;
-  height: 40em;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr); }
-  aside .circle-dotted {
-    width: 100%;
-    height: 100%;
-    border: 0.2em dashed white;
-    z-index: 1;
-    grid-column: 1 / 6;
-    grid-row: 3 / 8;
-    border-radius: 50%;
-    box-sizing: border-box; }
-  aside .circle-1 {
-    width: 2em;
-    height: 2em;
-    background-color: #ABD8C9;
-    border-radius: 50%;
-    z-index: 2;
-    grid-column: 1 / 2;
-    grid-row: 8 / 9; }
-  aside .circle-2 {
-    width: 4em;
-    height: 4em;
-    background-color: #C4A0CC;
-    border-radius: 50%;
-    z-index: 3;
-    grid-column: 8 / 9;
-    grid-row: 2 / 3; }
-  aside .photo {
-    height: 100%;
-    grid-column: 2 / 9;
-    grid-row: 2 / 9; }
+    flex-direction: column;
+    justify-content: space-evenly; }
+    #info section h1 {
+      font-family: "Aleo";
+      font-weight: 600;
+      color: white;
+      font-size: 4em; }
+    #info section h2 {
+      font-family: "Aleo";
+      font-weight: 400;
+      color: white;
+      font-size: 5em; }
+      #info section h2 span {
+        color: #C4A0CC; }
+      #info section h2 a {
+        color: #ABD8C9; }
+    #info section h3 {
+      font-family: "Roboto", "sans-serif";
+      font-weight: 300;
+      color: white;
+      font-size: 2em; }
+    #info section ul {
+      width: 30em;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0; }
+  #info aside {
+    width: 40em;
+    height: 40em;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr); }
+    #info aside .circle-dotted {
+      width: 100%;
+      height: 100%;
+      border: 0.2em dashed white;
+      z-index: 1;
+      grid-column: 1 / 6;
+      grid-row: 3 / 8;
+      border-radius: 50%;
+      box-sizing: border-box; }
+    #info aside .circle-1 {
+      width: 2em;
+      height: 2em;
+      background-color: #ABD8C9;
+      border-radius: 50%;
+      z-index: 2;
+      grid-column: 1 / 2;
+      grid-row: 8 / 9; }
+    #info aside .circle-2 {
+      width: 4em;
+      height: 4em;
+      background-color: #C4A0CC;
+      border-radius: 50%;
+      z-index: 3;
+      grid-column: 8 / 9;
+      grid-row: 2 / 3; }
+    #info aside .photo {
+      height: 100%;
+      grid-column: 2 / 9;
+      grid-row: 2 / 9; }
 
 .btn-profile {
   text-align: center; }
@@ -92,42 +105,51 @@ aside {
     color: white;
     font-size: 1.5em; }
 
-#about h2 {
-  width: 50%;
-  font-family: "Aleo";
-  font-weight: 600;
-  color: white;
-  font-size: 3em; }
-
-#about section {
-  justify-content: center;
-  width: 50%; }
-  #about section p {
-    font-family: "Roboto", "sans-serif";
-    font-weight: 300;
+#about {
+  max-width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  #about h2 {
+    width: 50%;
+    font-family: "Aleo";
+    font-weight: 600;
     color: white;
-    font-size: 1.4em;
-    line-height: 1.3em;
-    margin-bottom: 2em; }
-    #about section p span {
-      color: #C4A0CC; }
-  #about section .btn-cv-contact {
-    display: flex;
-    flex-direction: row; }
-    #about section .btn-cv-contact .btn-cv {
-      border: none;
-      font-family: "Aleo";
-      font-weight: 600;
-      font-size: 1.5em;
-      padding: 0.5em 2em;
-      background-color: #C4A0CC;
-      margin-right: 1em;
-      cursor: pointer; }
-    #about section .btn-cv-contact .btn-contact {
-      border: none;
-      font-family: "Aleo";
-      font-weight: 600;
-      font-size: 1.5em;
-      padding: 0.5em 2em;
-      background-color: white;
-      cursor: pointer; }
+    font-size: 3em; }
+  #about section {
+    justify-content: center;
+    width: 50%; }
+    #about section p {
+      font-family: "Roboto", "sans-serif";
+      font-weight: 300;
+      color: white;
+      font-size: 1.4em;
+      line-height: 1.3em;
+      margin-bottom: 2em; }
+      #about section p span {
+        color: #C4A0CC; }
+    #about section .btn-cv-contact {
+      display: flex;
+      flex-direction: row; }
+      #about section .btn-cv-contact .btn-cv {
+        border: none;
+        font-family: "Aleo";
+        font-weight: 600;
+        font-size: 1.5em;
+        padding: 0.5em 2em;
+        background-color: #C4A0CC;
+        margin-right: 1em;
+        cursor: pointer; }
+        #about section .btn-cv-contact .btn-cv:hover {
+          background-color: #885294; }
+      #about section .btn-cv-contact .btn-contact {
+        border: none;
+        font-family: "Aleo";
+        font-weight: 600;
+        font-size: 1.5em;
+        padding: 0.5em 2em;
+        background-color: white;
+        cursor: pointer; }

@@ -62,80 +62,90 @@ body{
     background-color: $color;
 }
 
-#container, #about{
+::-webkit-scrollbar { width: 1em }
+::-webkit-scrollbar-track { background: $color }
+::-webkit-scrollbar-thumb { background: #333333 }
+
+#container {
     max-width: 80%;
     height: 100vh;
     margin: $margin;
+    @include flexbox2;
+    justify-content: space-evenly;
+}
+
+#info {
+    width: 100%;
     @include flexbox;
     align-items: center;
     justify-content: space-between;
-}
 
-section{
-    height: 80%;
-    @include flexbox2;
-    justify-content: space-evenly;
-
-    h1 {
-        @include family-weight($font1, $font-weight2, $color1, 4em);
+    section{
+        height: 80%;
+        @include flexbox2;
+        justify-content: space-evenly;
+    
+        h1 {
+            @include family-weight($font1, $font-weight2, $color1, 4em);
+        }
+        
+        h2 {
+            @include family-weight($font1, $font-weight1, $color1, 5em);
+                span{
+                    color: $color2;
+                }
+                a{
+                    color: $color3;
+                }
+        }
+    
+        h3 {
+            @include family-weight($font2, $font-weight3, $color1, 2em);
+        }
+    
+        ul {
+            width: 30em;
+            list-style-type: none;
+            @include flexbox;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0;
+        }
     }
     
-    h2 {
-        @include family-weight($font1, $font-weight1, $color1, 5em);
-            span{
-                color: $color2;
-            }
-            a{
-                color: $color3;
-            }
-    }
-
-    h3 {
-        @include family-weight($font2, $font-weight3, $color1, 2em);
-    }
-
-    ul {
-        width: 30em;
-        list-style-type: none;
-        @include flexbox;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 0;
-    }
-}
-
-aside {
-    @include width-height(40em, 40em);
-    @include grid1(grid, repeat(8, 1fr), repeat(8, 1fr));
-
-    .circle-dotted {
-        @include width-height(100%, 100%);
-        border: 0.2em dashed $color1;
-        z-index: 1;
-        grid-column: 1 / 6;
-        grid-row: 3 / 8;
-        border-radius: 50%;
-        box-sizing: border-box;
-    }
-
-    .circle-1 {
-        @include width-height(2em, 2em);
-        @include circle($color3, 50%, 2);
-        grid-column: 1 / 2;
-        grid-row: 8 / 9;
-    }
-
-    .circle-2 {
-        @include width-height(4em, 4em);
-        @include circle($color2, 50%, 3);
-        grid-column: 8 / 9;
-        grid-row: 2 / 3;
-    }
-
-    .photo{
-        height: 100%;
-        grid-column: 2 / 9;
-        grid-row: 2 / 9;
+    aside {
+        @include width-height(40em, 40em);
+        @include grid1(grid, repeat(8, 1fr), repeat(8, 1fr));
+    
+        .circle-dotted {
+            @include width-height(100%, 100%);
+            border: 0.2em dashed $color1;
+            z-index: 1;
+            grid-column: 1 / 6;
+            grid-row: 3 / 8;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+    
+        .circle-1 {
+            @include width-height(2em, 2em);
+            @include circle($color3, 50%, 2);
+            grid-column: 1 / 2;
+            grid-row: 8 / 9;
+        }
+    
+        .circle-2 {
+            @include width-height(4em, 4em);
+            @include circle($color2, 50%, 3);
+            grid-column: 8 / 9;
+            grid-row: 2 / 3;
+        }
+    
+        .photo{
+            height: 100%;
+            grid-column: 2 / 9;
+            grid-row: 2 / 9;
+        }
     }
 }
 
@@ -147,6 +157,13 @@ aside {
 }
 
 #about {
+    max-width: 80%;
+    height: 100vh;
+    margin: $margin;
+    @include flexbox;
+    align-items: center;
+    justify-content: space-between;
+
     h2 {
         width: 50%;
         @include family-weight($font1, $font-weight2, $color1, 3em);
@@ -171,10 +188,13 @@ aside {
                 @include btn-about(none, $font1, $font-weight2, 1.5em, 0.5em 2em, $color2);
                 margin-right: 1em;
                 cursor: pointer;
+                &:hover {
+                    background-color: #885294;
+                }
             }
 
             .btn-contact {
-                @include btn-about(none, $font1, $font-weight2, 1.5em, 0.5em 2em, $color1)
+                @include btn-about(none, $font1, $font-weight2, 1.5em, 0.5em 2em, $color1);
                 cursor: pointer;
             }
         }
