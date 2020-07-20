@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 * {
-  margin: 0; }
+  margin: 0;
+  scroll-behavior: smooth; }
 
 body {
   font-size: 12px;
@@ -15,7 +16,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #333333; }
 
-#container {
+.container-info {
   max-width: 80%;
   height: 100vh;
   margin: 0 auto;
@@ -23,37 +24,37 @@ body {
   flex-direction: column;
   justify-content: space-evenly; }
 
-#info {
+.info {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
-  #info section {
+  .info section {
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
-    #info section h1 {
+    .info section h1 {
       font-family: "Aleo";
       font-weight: 600;
       color: white;
       font-size: 4em; }
-    #info section h2 {
+    .info section h2 {
       font-family: "Aleo";
       font-weight: 400;
       color: white;
       font-size: 5em; }
-      #info section h2 span {
+      .info section h2 span {
         color: #C4A0CC; }
-      #info section h2 a {
+      .info section h2 a {
         color: #ABD8C9; }
-    #info section h3 {
+    .info section h3 {
       font-family: "Roboto", "sans-serif";
       font-weight: 300;
       color: white;
       font-size: 2em; }
-    #info section ul {
+    .info section ul {
       width: 30em;
       list-style-type: none;
       display: flex;
@@ -61,22 +62,22 @@ body {
       justify-content: space-between;
       align-items: flex-end;
       padding: 0; }
-  #info aside {
+  .info aside {
     width: 40em;
     height: 40em;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr); }
-    #info aside .circle-dotted {
-      width: 100%;
-      height: 100%;
+    .info aside .circle-dotted {
+      width: 27em;
+      height: 27em;
       border: 0.2em dashed white;
       z-index: 1;
       grid-column: 1 / 6;
       grid-row: 3 / 8;
       border-radius: 50%;
       box-sizing: border-box; }
-    #info aside .circle-1 {
+    .info aside .circle-1 {
       width: 2em;
       height: 2em;
       background-color: #ABD8C9;
@@ -84,7 +85,7 @@ body {
       z-index: 2;
       grid-column: 1 / 2;
       grid-row: 8 / 9; }
-    #info aside .circle-2 {
+    .info aside .circle-2 {
       width: 4em;
       height: 4em;
       background-color: #C4A0CC;
@@ -92,20 +93,24 @@ body {
       z-index: 3;
       grid-column: 8 / 9;
       grid-row: 2 / 3; }
-    #info aside .photo {
+    .info aside .photo {
       height: 100%;
       grid-column: 2 / 9;
       grid-row: 2 / 9; }
 
-.btn-profile {
-  text-align: center; }
-  .btn-profile h4 {
-    font-family: "Roboto", "sans-serif";
-    font-weight: 100;
-    color: white;
-    font-size: 1.5em; }
+.btn-about {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  color: white;
+  font-size: 1.5em;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none; }
+  .btn-about:hover {
+    color: #C4A0CC;
+    transition: color, 0.6s ease 0.2s; }
 
-#about {
+.about-me {
   max-width: 80%;
   height: 100vh;
   margin: 0 auto;
@@ -113,43 +118,50 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
-  #about h2 {
+  .about-me h2 {
     width: 50%;
     font-family: "Aleo";
     font-weight: 600;
     color: white;
     font-size: 3em; }
-  #about section {
+  .about-me section {
     justify-content: center;
     width: 50%; }
-    #about section p {
+    .about-me section p {
       font-family: "Roboto", "sans-serif";
       font-weight: 300;
       color: white;
       font-size: 1.4em;
       line-height: 1.3em;
       margin-bottom: 2em; }
-      #about section p span {
+      .about-me section p span {
         color: #C4A0CC; }
-    #about section .btn-cv-contact {
+    .about-me section .btn-cv-contact {
       display: flex;
-      flex-direction: row; }
-      #about section .btn-cv-contact .btn-cv {
+      flex-direction: row;
+      width: 32em;
+      justify-content: space-between; }
+      .about-me section .btn-cv-contact .btn-cv {
         border: none;
         font-family: "Aleo";
         font-weight: 600;
         font-size: 1.5em;
         padding: 0.5em 2em;
         background-color: #C4A0CC;
-        margin-right: 1em;
+        color: black;
+        text-decoration: none;
         cursor: pointer; }
-        #about section .btn-cv-contact .btn-cv:hover {
-          background-color: #885294; }
-      #about section .btn-cv-contact .btn-contact {
+        .about-me section .btn-cv-contact .btn-cv:hover {
+          background-color: #885294;
+          color: white;
+          transition: background-color, color, 0.6s ease 0.2s; }
+      .about-me section .btn-cv-contact .btn-contact {
         border: none;
         font-family: "Aleo";
         font-weight: 600;
         font-size: 1.5em;
         padding: 0.5em 2em;
         background-color: white;
+        color: black;
+        text-decoration: none;
         cursor: pointer; }
