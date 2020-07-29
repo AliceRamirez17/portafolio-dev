@@ -151,7 +151,7 @@ body{
     }
 }
 
-.btn-about, .btn-contact-info {
+.btn-about, .btn-contact-info, .btn-portfolio {
     @include family-weight($font2, 300, $color1, 1.5em);
     margin: $margin;
     text-align: center;
@@ -210,6 +210,59 @@ body{
                 text-decoration: none;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+.skills {
+    max-width: 80%;
+    height: 100vh;
+    margin: $margin;
+    @include flexbox2;
+    justify-content: space-evenly;
+
+    .all-skills {
+        @include grid1(grid, 38% 24% 38%, repeat(4, 1fr));
+
+        .circle-skills {
+            width: 30em;
+            height: 30em;
+            background-color: transparent;
+            border: 0.2em solid $color1;
+            border-radius: 50%;
+            @include flexbox2;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            @include family-weight($font1, $font-weight2, $color1, 3em);
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            justify-self: center;
+        }
+
+        img {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            justify-self: center;
+            align-self: end;
+        }
+
+        p {
+            @include family-weight($font1, $font-weight3, $color1, 1.4em);
+            text-align: center;
+        }
+    
+        .design-skills {
+            grid-column: 1 / 2;
+            grid-row: 2 / 5;
+            justify-self: end;
+        }
+    
+        .frontend-skills {
+            grid-column: 3 / 4;
+            grid-row: 1 / 4;
         }
     }
 }
