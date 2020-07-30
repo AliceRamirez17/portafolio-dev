@@ -240,7 +240,11 @@ body {
       width: 32%;
       height: 45%;
       background-color: #C4C4C4;
-      border-radius: 2em; }
+      border-top-left-radius: 2em;
+      border-top-right-radius: 2em;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top; }
       .portfolio .all-work .each-work .all-btn-work {
         display: flex;
         width: 100%;
@@ -249,15 +253,25 @@ body {
           border-style: none;
           padding: 0;
           width: 50%;
+          height: 2em;
+          outline: none;
+          cursor: pointer;
           font-family: "Aleo";
           font-weight: 600;
           color: black;
           font-size: 1.4em; }
         .portfolio .all-work .each-work .all-btn-work .btn-docs {
-          border-bottom-left-radius: 2em;
           background-color: #C4A0CC; }
         .portfolio .all-work .each-work .all-btn-work .btn-link {
-          border-bottom-right-radius: 2em;
           background-color: #ABD8C9; }
-    .portfolio .all-work .work-big {
-      flex-grow: 0; }
+    .portfolio .all-work .work-1 {
+      background-image: url("../img/credit-card-validation.JPG"); }
+    .portfolio .all-work .work-2 {
+      background-image: url("../img/data-lovers.JPG"); }
+    .portfolio .all-work .work-3 {
+      background-image: url("../img/voz-amiga.JPG"); }
+    .portfolio .all-work .work-4 {
+      background-image: url("../img/md-links.jpg");
+      background-position: left; }
+    .portfolio .all-work .work-5 {
+      background-image: url("../img/burger-queer.JPG"); }
