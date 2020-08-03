@@ -31,7 +31,7 @@ body {
   align-items: center;
   justify-content: space-between; }
   .info section {
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
@@ -55,13 +55,21 @@ body {
       color: white;
       font-size: 2em; }
     .info section ul {
-      width: 30em;
+      width: 35%;
       list-style-type: none;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
       padding: 0; }
+      .info section ul img {
+        margin-bottom: 0.4em; }
+      .info section ul li {
+        font-family: "Roboto", "sans-serif";
+        font-weight: 300;
+        color: white;
+        font-size: 1em;
+        cursor: pointer; }
   .info aside {
     width: 40em;
     height: 40em;
@@ -98,7 +106,7 @@ body {
       grid-column: 2 / 9;
       grid-row: 2 / 9; }
 
-.btn-about, .btn-contact-info, .btn-portfolio {
+.btn-about, .btn-contact-info, .btn-portfolio, .btn-skills {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
   color: white;
@@ -106,42 +114,48 @@ body {
   margin: 0 auto;
   text-align: center;
   text-decoration: none; }
-  .btn-about:hover, .btn-contact-info:hover, .btn-portfolio:hover {
+  .btn-about:hover, .btn-contact-info:hover, .btn-portfolio:hover, .btn-skills:hover {
     color: #C4A0CC;
     transition: color, 0.6s ease 0.2s; }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
   max-width: 80%;
   height: 100vh;
   margin: 0 auto;
+  justify-content: space-evenly; }
+
+.about-container {
+  height: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between; }
-  .about-me h2 {
+  .about-container h2 {
     width: 50%;
     font-family: "Aleo";
     font-weight: 600;
     color: white;
     font-size: 3em; }
-  .about-me section {
+  .about-container section {
     justify-content: center;
     width: 50%; }
-    .about-me section p {
+    .about-container section p {
       font-family: "Roboto", "sans-serif";
       font-weight: 300;
       color: white;
       font-size: 1.4em;
       line-height: 1.3em;
       margin-bottom: 2em; }
-      .about-me section p span {
+      .about-container section p span {
         color: #C4A0CC; }
-    .about-me section .btn-cv-contact {
+    .about-container section .btn-cv-contact {
       display: flex;
       flex-direction: row;
       width: 32em;
       justify-content: space-between; }
-      .about-me section .btn-cv-contact .btn-cv {
+      .about-container section .btn-cv-contact .btn-cv {
         border: none;
         font-family: "Aleo";
         font-weight: 600;
@@ -151,11 +165,11 @@ body {
         color: black;
         text-decoration: none;
         cursor: pointer; }
-        .about-me section .btn-cv-contact .btn-cv:hover {
+        .about-container section .btn-cv-contact .btn-cv:hover {
           background-color: #885294;
           color: white;
           transition: background-color, color, 0.6s ease 0.2s; }
-      .about-me section .btn-cv-contact .btn-contact {
+      .about-container section .btn-cv-contact .btn-contact {
         border: none;
         font-family: "Aleo";
         font-weight: 600;
@@ -178,6 +192,7 @@ body {
     grid-template-columns: 38% 24% 38%;
     grid-template-rows: repeat(4, 1fr); }
     .skills .all-skills .circle-skills {
+      position: relative;
       width: 30em;
       height: 30em;
       background-color: transparent;
@@ -186,6 +201,16 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      box-sizing: border-box; }
+    .skills .all-skills h3 {
+      position: absolute;
+      top: 1em;
+      font-family: "Aleo";
+      font-weight: 400;
+      color: #ABD8C9;
+      font-size: 3em;
+      background-color: black;
+      padding: 0.4em 0;
       box-sizing: border-box; }
     .skills .all-skills h2 {
       font-family: "Aleo";
@@ -201,7 +226,7 @@ body {
       justify-self: center;
       align-self: end; }
     .skills .all-skills p {
-      font-family: "Aleo";
+      font-family: "Roboto", "sans-serif";
       font-weight: 300;
       color: white;
       font-size: 1.4em;
@@ -212,7 +237,12 @@ body {
       justify-self: end; }
     .skills .all-skills .frontend-skills {
       grid-column: 3 / 4;
-      grid-row: 1 / 4; }
+      grid-row: 1 / 4;
+      padding: 7em 3em;
+      flex-wrap: wrap;
+      box-sizing: border-box; }
+      .skills .all-skills .frontend-skills .title-frontend {
+        right: 0; }
 
 .portfolio {
   max-width: 80%;
@@ -275,3 +305,49 @@ body {
       background-position: left; }
     .portfolio .all-work .work-5 {
       background-image: url("../img/burger-queer.JPG"); }
+
+.contact {
+  max-width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .contact section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center; }
+    .contact section .contact-items {
+      width: 50%; }
+      .contact section .contact-items ul {
+        list-style-type: none;
+        padding: 0;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        .contact section .contact-items ul li {
+          font-family: "Aleo";
+          font-weight: 300;
+          color: white;
+          font-size: 2em;
+          display: flex;
+          align-items: center; }
+          .contact section .contact-items ul li img {
+            width: 1.5em;
+            margin-right: 1em; }
+    .contact section h2 {
+      font-family: "Aleo";
+      font-weight: 600;
+      color: white;
+      font-size: 3em;
+      width: 50%; }
+  .contact p {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 300;
+    color: white;
+    font-size: 1.2em; }

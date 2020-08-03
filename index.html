@@ -16,10 +16,9 @@
                 <h2><span>Front End Developer</span> &&<br><a>Diseñadora Gráfica</a></h2>
                 <h3>Diseño interfaces de manera creativa</h3>
                 <ul>
-                    <li><img src="img/linkedin.svg" alt="LinkedIn"></li>
-                    <li><img src="img/github.svg" alt="Github"></li>
-                    <li><img src="img/behance.svg" alt="Behance"></li>
-                    <li><img src="img/npm.svg" alt="npm"></li>
+                    <li id="btnLinkedin"><img src="img/linkedin.svg" alt="LinkedIn"><p>LinkedIn</p></li>
+                    <li id="btnGithub"><img src="img/github.svg" alt="Github"><p>GitHub</p></li>
+                    <li id="btnBehance"><img src="img/behance.svg" alt="Behance"><p>Behance</p></li>
                 </ul>
             </section>
             <aside>
@@ -35,22 +34,29 @@
         </a>
     </div>
     <div class="about-me" id="about">
-        <h2>Conoce un poco<br>más sobre mí</h2>
-        <section>
-            <p>
-                Soy desarrolladora Front-End jr con conocimientos avanzados en Diseño Gráfico. Tengo experiencia en Agencias de Diseño BTL y en el manejo de Branding de marcas como Trilce, Claro, Afp Integra, Scotiabank, Diario Gestión, Belcorp, entre otros.<br><br>
-                Soy autodidacta y dispuesta al aprendizaje continuo. Soy curiosa por vocación y adaptable al cambio.<br><br>
-                <span>Mi meta es ser Full Stack Developer, líder en un ambiente interdisciplinario y crear conciencia sobre la importancia del desarrollo de la mujer en tecnología.</span>
-            </p>
-            <div class="btn-cv-contact">
-                <a href="https://drive.google.com/file/d/1KnG9hdL65impfxiQ9wr7gWgCmR0A4sEK/view?usp=sharing" class="btn-cv">Descarga mi cv</a>
-                <a href="#contact" class="btn-contact">Contáctame</a>
-            </div>
-        </section>
+        <div class="about-container">
+            <h2>Conoce un poco<br>más sobre mí</h2>
+            <section>
+                <p>
+                    Soy desarrolladora Front-End jr con conocimientos avanzados en Diseño Gráfico. Tengo experiencia en Agencias de Diseño BTL y en el manejo de Branding de marcas como Trilce, Claro, Afp Integra, Scotiabank, Diario Gestión, Belcorp, entre otros.<br><br>
+                    Soy autodidacta y dispuesta al aprendizaje continuo. Soy curiosa por vocación y adaptable al cambio.<br><br>
+                    <span>Mi meta es ser Full Stack Developer, líder en un ambiente interdisciplinario y crear conciencia sobre la importancia del desarrollo de la mujer en tecnología.</span>
+                </p>
+                <div class="btn-cv-contact">
+                    <a href="https://drive.google.com/file/d/1KnG9hdL65impfxiQ9wr7gWgCmR0A4sEK/view?usp=sharing" target="_blank" class="btn-cv">Descarga mi cv</a>
+                    <a href="#contact-info" class="btn-contact">Contáctame</a>
+                </div>
+            </section>
+        </div>
+        <a href="#skills" class="btn-skills">
+            <img src="img/arrow-1.svg" alt="skills">
+            <p>Skills</p>
+        </a>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <section class="all-skills">
             <div class="circle-skills design-skills">
+                <h3>Diseño</h3>
                 <p>Photoshop</p>
                 <p>Illustrator</p>
                 <p>Indesign</p>
@@ -62,6 +68,7 @@
             <h2>Skills</h2>
             <img src="img/skills-line.svg" alt="">
             <div class="circle-skills frontend-skills">
+                <h3 class="title-frontend">Front-end</h3>
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>Javascript</p>
@@ -118,6 +125,19 @@
             <img src="img/arrow-1.svg" alt="contact">
             <p>Contáctame</p>
         </a>
+    </div>
+    <div class="contact" id="contact-info">
+        <section>
+            <h2>Trabajamos juntos?</h2>
+            <div class="contact-items">
+                <ul>
+                    <li><img src="img/mail.svg">aliceramirez.dev@gmail.com</li>
+                    <li><img src="img/phone.svg">949375077</li>
+                    <li><img src="img/linkedin.svg">Alice Ramirez</li>
+                </ul>
+            </div>
+        </section>
+        <p>Copyright ® 2020 Hecho por Alice Ramirez</p>
     </div>
     <script src='main.js'></script>
 </body>
