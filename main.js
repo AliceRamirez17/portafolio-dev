@@ -31,7 +31,7 @@ btnDocs6.addEventListener('click', () => {
 });
 
 btnDocs7.addEventListener('click', () => {
-    window.open("https://github.com/AliceRamirez17/LIM012-fe-md-links", "_blank")
+    window.open("https://aliceramirez17.github.io/LIM012-fe-md-links/", "_blank")
 });
 
 const btnLinkedin = document.getElementById('btnLinkedin');
