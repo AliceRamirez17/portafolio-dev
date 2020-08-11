@@ -1,2 +1,2 @@
-# portafolio-dev
-¡Hola! Soy Alice Ramírez, aquí encontrarás un poco sobre mí y mi portafolio de proyectos
+# Front End Portfolio
+![portfolio](/img/portfolio.gif)
