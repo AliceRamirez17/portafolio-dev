@@ -92,7 +92,7 @@ body{
         }
         
         h2 {
-            @include family-weight($font1, $font-weight1, $color1, 5em);
+            @include family-weight($font1, $font-weight1, $color1, 4.2em);
                 span{
                     color: $color2;
                 }
@@ -424,3 +424,4 @@ body{
     }
 }
 
+@import './mediaQueries';
