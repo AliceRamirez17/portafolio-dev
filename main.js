@@ -6,6 +6,7 @@ const btnDocs5 = document.getElementById("btn-5");
 const btnDocs6 = document.getElementById("btn-6");
 const btnDocs7 = document.getElementById("btn-7");
 const btnDocs9 = document.getElementById("btn-9");
+const btnDocs11 = document.getElementById("btn-11");
 
 btnDocs1.addEventListener("click", () => {
   window.open(
@@ -55,6 +56,10 @@ btnDocs9.addEventListener("click", () => {
     "https://github.com/AliceRamirez17/LIM012-fe-burger-queen-api-client/tree/wip-alice",
     "_blank"
   );
+});
+
+btnDocs11.addEventListener("click", () => {
+  window.open("https://winagperu.org/", "_blank");
 });
 
 const btnLinkedin = document.getElementById("btnLinkedin");

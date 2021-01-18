@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap");
 * {
   margin: 0;
   scroll-behavior: smooth; }
@@ -46,9 +47,9 @@ body {
       color: white;
       font-size: 4.2em; }
       .info section h2 span {
-        color: #C4A0CC; }
+        color: #c4a0cc; }
       .info section h2 a {
-        color: #ABD8C9; }
+        color: #abd8c9; }
     .info section h3 {
       font-family: "Roboto", "sans-serif";
       font-weight: 300;
@@ -88,7 +89,7 @@ body {
     .info aside .circle-1 {
       width: 2em;
       height: 2em;
-      background-color: #ABD8C9;
+      background-color: #abd8c9;
       border-radius: 50%;
       z-index: 2;
       grid-column: 1 / 2;
@@ -96,7 +97,7 @@ body {
     .info aside .circle-2 {
       width: 4em;
       height: 4em;
-      background-color: #C4A0CC;
+      background-color: #c4a0cc;
       border-radius: 50%;
       z-index: 3;
       grid-column: 8 / 9;
@@ -106,7 +107,10 @@ body {
       grid-column: 2 / 9;
       grid-row: 2 / 9; }
 
-.btn-about, .btn-contact-info, .btn-portfolio, .btn-skills {
+.btn-about,
+.btn-contact-info,
+.btn-portfolio,
+.btn-skills {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
   color: white;
@@ -114,8 +118,11 @@ body {
   margin: 0 auto;
   text-align: center;
   text-decoration: none; }
-  .btn-about:hover, .btn-contact-info:hover, .btn-portfolio:hover, .btn-skills:hover {
-    color: #C4A0CC;
+  .btn-about:hover,
+  .btn-contact-info:hover,
+  .btn-portfolio:hover,
+  .btn-skills:hover {
+    color: #c4a0cc;
     transition: color, 0.6s ease 0.2s; }
 
 .about-me {
@@ -149,7 +156,7 @@ body {
       line-height: 1.3em;
       margin-bottom: 2em; }
       .about-container section p span {
-        color: #C4A0CC; }
+        color: #c4a0cc; }
     .about-container section .btn-cv-contact {
       display: flex;
       flex-direction: row;
@@ -161,7 +168,7 @@ body {
         font-weight: 600;
         font-size: 1.5em;
         padding: 0.5em 2em;
-        background-color: #C4A0CC;
+        background-color: #c4a0cc;
         color: black;
         text-decoration: none;
         cursor: pointer; }
@@ -207,7 +214,7 @@ body {
       top: 1em;
       font-family: "Aleo";
       font-weight: 400;
-      color: #ABD8C9;
+      color: #abd8c9;
       font-size: 3em;
       background-color: black;
       padding: 0.4em 0;
@@ -269,7 +276,7 @@ body {
       display: flex;
       width: 32%;
       height: 45%;
-      background-color: #C4C4C4;
+      background-color: #c4c4c4;
       border-top-left-radius: 2em;
       border-top-right-radius: 2em;
       background-size: cover;
@@ -291,9 +298,9 @@ body {
           color: black;
           font-size: 1.4em; }
         .portfolio .all-work .each-work .all-btn-work .btn-docs {
-          background-color: #C4A0CC; }
+          background-color: #c4a0cc; }
         .portfolio .all-work .each-work .all-btn-work .btn-link {
-          background-color: #ABD8C9; }
+          background-color: #abd8c9; }
     .portfolio .all-work .work-1 {
       background-image: url("../img/credit-card-validation.JPG"); }
     .portfolio .all-work .work-2 {
@@ -305,6 +312,8 @@ body {
       background-position: left; }
     .portfolio .all-work .work-5 {
       background-image: url("../img/burger-queer.JPG"); }
+    .portfolio .all-work .work-6 {
+      background-image: url("../img/winag.png"); }
 
 .contact {
   max-width: 80%;

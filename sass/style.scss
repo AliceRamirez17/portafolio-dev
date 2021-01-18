@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap");
 
 $color: black;
 $color1: white;
-$color2: #C4A0CC;
-$color3: #ABD8C9;
-$color4: #C4C4C4;
+$color2: #c4a0cc;
+$color3: #abd8c9;
+$color4: #c4c4c4;
 $font1: "Aleo";
 $font2: "Roboto", "sans-serif";
 $font-weight1: 400;
@@ -13,415 +14,442 @@ $font-weight3: 300;
 $margin: 0 auto;
 
 @mixin width-height($width, $height) {
-    width: $width;
-    height: $height;
+  width: $width;
+  height: $height;
 }
 
 @mixin flexbox {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 @mixin flexbox2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin family-weight($family, $weight, $color, $size) {
-    font-family: $family;
-    font-weight: $weight;
-    color: $color;
-    font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  color: $color;
+  font-size: $size;
 }
 
 @mixin grid1($display, $cols, $rows) {
-    display: $display;
-    grid-template-columns: $cols;
-    grid-template-rows: $rows;
+  display: $display;
+  grid-template-columns: $cols;
+  grid-template-rows: $rows;
 }
 
 @mixin circle($color, $radius, $z-index) {
-    background-color: $color;
-    border-radius: $radius;
-    z-index: $z-index;
+  background-color: $color;
+  border-radius: $radius;
+  z-index: $z-index;
 }
 
 @mixin btn-about($border, $font, $font-weight, $size, $padding, $background) {
-    border: $border;
-    font-family: $font;
-    font-weight: $font-weight;
-    font-size: $size;
-    padding: $padding;
-    background-color: $background;
+  border: $border;
+  font-family: $font;
+  font-weight: $font-weight;
+  font-size: $size;
+  padding: $padding;
+  background-color: $background;
 }
 
-*{
-    margin: 0;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-body{
-    font-size: 12px;
-    background-color: $color; 
+body {
+  font-size: 12px;
+  background-color: $color;
 }
 
-::-webkit-scrollbar { width: 1em }
-::-webkit-scrollbar-track { background: $color }
-::-webkit-scrollbar-thumb { background: #333333 }
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background: $color;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
 
 .container-info {
-    max-width: 80%;
-    height: 100vh;
-    margin: $margin;
-    @include flexbox2;
-    justify-content: space-evenly;
+  max-width: 80%;
+  height: 100vh;
+  margin: $margin;
+  @include flexbox2;
+  justify-content: space-evenly;
 }
 
 .info {
-    width: 100%;
-    @include flexbox;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  @include flexbox;
+  align-items: center;
+  justify-content: space-between;
 
-    section{
-        height: 90%;
-        @include flexbox2;
-        justify-content: space-evenly;
-    
-        h1 {
-            @include family-weight($font1, $font-weight2, $color1, 4em);
-        }
-        
-        h2 {
-            @include family-weight($font1, $font-weight1, $color1, 4.2em);
-                span{
-                    color: $color2;
-                }
-                a{
-                    color: $color3;
-                }
-        }
-    
-        h3 {
-            @include family-weight($font2, $font-weight3, $color1, 2em);
-        }
-    
-        ul {
-            width: 35%;
-            list-style-type: none;
-            @include flexbox;
-            justify-content: space-between;
-            align-items: flex-end;
-            padding: 0;
+  section {
+    height: 90%;
+    @include flexbox2;
+    justify-content: space-evenly;
 
-            img {
-                margin-bottom: 0.4em;
-            }
-            
-            li {
-                @include family-weight($font2, $font-weight3, $color1, 1em);
-                cursor: pointer;
-            }
-        }
+    h1 {
+      @include family-weight($font1, $font-weight2, $color1, 4em);
     }
-    
-    aside {
-        @include width-height(40em, 40em);
-        @include grid1(grid, repeat(8, 1fr), repeat(8, 1fr));
-    
-        .circle-dotted {
-            @include width-height(27em, 27em);
-            border: 0.2em dashed $color1;
-            z-index: 1;
-            grid-column: 1 / 6;
-            grid-row: 3 / 8;
-            border-radius: 50%;
-            box-sizing: border-box;
-        }
-    
-        .circle-1 {
-            @include width-height(2em, 2em);
-            @include circle($color3, 50%, 2);
-            grid-column: 1 / 2;
-            grid-row: 8 / 9;
-        }
-    
-        .circle-2 {
-            @include width-height(4em, 4em);
-            @include circle($color2, 50%, 3);
-            grid-column: 8 / 9;
-            grid-row: 2 / 3;
-        }
-    
-        .photo{
-            height: 100%;
-            grid-column: 2 / 9;
-            grid-row: 2 / 9;
-        }
+
+    h2 {
+      @include family-weight($font1, $font-weight1, $color1, 4.2em);
+      span {
+        color: $color2;
+      }
+      a {
+        color: $color3;
+      }
     }
+
+    h3 {
+      @include family-weight($font2, $font-weight3, $color1, 2em);
+    }
+
+    ul {
+      width: 35%;
+      list-style-type: none;
+      @include flexbox;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0;
+
+      img {
+        margin-bottom: 0.4em;
+      }
+
+      li {
+        @include family-weight($font2, $font-weight3, $color1, 1em);
+        cursor: pointer;
+      }
+    }
+  }
+
+  aside {
+    @include width-height(40em, 40em);
+    @include grid1(grid, repeat(8, 1fr), repeat(8, 1fr));
+
+    .circle-dotted {
+      @include width-height(27em, 27em);
+      border: 0.2em dashed $color1;
+      z-index: 1;
+      grid-column: 1 / 6;
+      grid-row: 3 / 8;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    .circle-1 {
+      @include width-height(2em, 2em);
+      @include circle($color3, 50%, 2);
+      grid-column: 1 / 2;
+      grid-row: 8 / 9;
+    }
+
+    .circle-2 {
+      @include width-height(4em, 4em);
+      @include circle($color2, 50%, 3);
+      grid-column: 8 / 9;
+      grid-row: 2 / 3;
+    }
+
+    .photo {
+      height: 100%;
+      grid-column: 2 / 9;
+      grid-row: 2 / 9;
+    }
+  }
 }
 
-.btn-about, .btn-contact-info, .btn-portfolio, .btn-skills {
-    @include family-weight($font2, 300, $color1, 1.5em);
-    margin: $margin;
-    text-align: center;
-    text-decoration: none;
-    &:hover {
-        color: $color2;
-        transition: color, 0.6s ease 0.2s;
-    }
+.btn-about,
+.btn-contact-info,
+.btn-portfolio,
+.btn-skills {
+  @include family-weight($font2, 300, $color1, 1.5em);
+  margin: $margin;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    color: $color2;
+    transition: color, 0.6s ease 0.2s;
+  }
 }
 
 .about-me {
-    @include flexbox2;
-    max-width: 80%;
-    height: 100vh;
-    margin: $margin;
-    justify-content: space-evenly;
+  @include flexbox2;
+  max-width: 80%;
+  height: 100vh;
+  margin: $margin;
+  justify-content: space-evenly;
 }
 
 .about-container {
-    height: 70%;
-    @include flexbox;
-    align-items: center;
-    justify-content: space-between;
+  height: 70%;
+  @include flexbox;
+  align-items: center;
+  justify-content: space-between;
 
-    h2 {
-        width: 50%;
-        @include family-weight($font1, $font-weight2, $color1, 3em);
+  h2 {
+    width: 50%;
+    @include family-weight($font1, $font-weight2, $color1, 3em);
+  }
+
+  section {
+    justify-content: center;
+    width: 50%;
+    p {
+      @include family-weight($font2, 300, $color1, 1.4em);
+      line-height: 1.3em;
+      margin-bottom: 2em;
+      span {
+        color: $color2;
+      }
     }
 
-    section {
-        justify-content: center;
-        width: 50%;
-        p {
-            @include family-weight($font2, 300, $color1, 1.4em);
-            line-height: 1.3em;
-            margin-bottom: 2em;
-            span {
-                color: $color2;
-            }
+    .btn-cv-contact {
+      @include flexbox;
+      width: 32em;
+      justify-content: space-between;
+
+      .btn-cv {
+        @include btn-about(
+          none,
+          $font1,
+          $font-weight2,
+          1.5em,
+          0.5em 2em,
+          $color2
+        );
+        color: $color;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          background-color: #885294;
+          color: $color1;
+          transition: background-color, color, 0.6s ease 0.2s;
         }
+      }
 
-        .btn-cv-contact {
-            @include flexbox;
-            width: 32em;
-            justify-content: space-between;
-
-            .btn-cv {
-                @include btn-about(none, $font1, $font-weight2, 1.5em, 0.5em 2em, $color2);
-                color: $color;
-                text-decoration: none;
-                cursor: pointer;
-                &:hover {
-                    background-color: #885294;
-                    color: $color1;
-                    transition: background-color, color, 0.6s ease 0.2s;
-                }
-            }
-
-            .btn-contact {
-                @include btn-about(none, $font1, $font-weight2, 1.5em, 0.5em 2em, $color1);
-                color: $color;
-                text-decoration: none;
-                cursor: pointer;
-            }
-        }
+      .btn-contact {
+        @include btn-about(
+          none,
+          $font1,
+          $font-weight2,
+          1.5em,
+          0.5em 2em,
+          $color1
+        );
+        color: $color;
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
+  }
 }
 
 .skills {
-    max-width: 80%;
-    height: 100vh;
-    margin: $margin;
-    @include flexbox2;
-    justify-content: space-evenly;
+  max-width: 80%;
+  height: 100vh;
+  margin: $margin;
+  @include flexbox2;
+  justify-content: space-evenly;
 
-    .all-skills {
-        @include grid1(grid, 38% 24% 38%, repeat(4, 1fr));
+  .all-skills {
+    @include grid1(grid, 38% 24% 38%, repeat(4, 1fr));
 
-        .circle-skills {
-            position: relative;
-            @include width-height(30em, 30em);
-            background-color: transparent;
-            border: 0.2em solid $color1;
-            border-radius: 50%;
-            @include flexbox2;
-            justify-content: center;
-            box-sizing: border-box;
-        }
-
-        h3 {
-            position: absolute;
-            top: 1em;
-            @include family-weight($font1, $font-weight1, $color3, 3em);
-            background-color: $color;
-            padding: 0.4em 0;
-            box-sizing: border-box;
-        }
-
-        h2 {
-            @include family-weight($font1, $font-weight2, $color1, 3em);
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
-            justify-self: center;
-        }
-
-        img {
-            grid-column: 2 / 3;
-            grid-row: 3 / 4;
-            justify-self: center;
-            align-self: end;
-        }
-
-        p {
-            @include family-weight($font2, $font-weight3, $color1, 1.4em);
-            text-align: center;
-        }
-    
-        .design-skills {
-            grid-column: 1 / 2;
-            grid-row: 2 / 5;
-            justify-self: end;
-        }
-    
-        .frontend-skills {
-            grid-column: 3 / 4;
-            grid-row: 1 / 4;
-            padding: 7em 3em;
-            flex-wrap: wrap;
-            box-sizing: border-box;
-
-            .title-frontend {
-                right: 0;
-            }
-        }
+    .circle-skills {
+      position: relative;
+      @include width-height(30em, 30em);
+      background-color: transparent;
+      border: 0.2em solid $color1;
+      border-radius: 50%;
+      @include flexbox2;
+      justify-content: center;
+      box-sizing: border-box;
     }
-}
 
-.portfolio {
-    max-width: 80%;
-    height: 100vh;
-    margin: $margin;
-    @include flexbox2;
-    align-items: center;
-    justify-content: space-evenly;
+    h3 {
+      position: absolute;
+      top: 1em;
+      @include family-weight($font1, $font-weight1, $color3, 3em);
+      background-color: $color;
+      padding: 0.4em 0;
+      box-sizing: border-box;
+    }
 
     h2 {
-        @include family-weight($font1, $font-weight2, $color1, 3em);
-        align-self: flex-start;
+      @include family-weight($font1, $font-weight2, $color1, 3em);
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      justify-self: center;
     }
 
-    .all-work {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        @include width-height(100%, 60vh);
-
-        .each-work {
-            display: flex;
-            @include width-height(32%, 45%);
-            background-color: $color4;
-            border-top-left-radius: 2em;
-            border-top-right-radius: 2em;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: top;
-
-            .all-btn-work {
-                display: flex;
-                width: 100%;
-                align-self: flex-end;
-
-                .btn-work {
-                    border-style: none;
-                    padding: 0;
-                    @include width-height(50%, 2em);
-                    outline: none;
-                    cursor: pointer;
-                    @include family-weight($font1, $font-weight2, $color, 1.4em)
-                }
-
-                .btn-docs {
-                    background-color: $color2;
-                }
-
-                .btn-link {
-                    background-color: $color3;
-                }
-            }
-        }
-
-        .work-1 {
-            background-image: url('../img/credit-card-validation.JPG');
-        }
-
-        .work-2 {
-            background-image: url('../img/data-lovers.JPG');
-        }
-
-        .work-3 {
-            background-image: url('../img/voz-amiga.JPG');
-        }
-
-        .work-4 {
-            background-image: url('../img/md-links.jpg');
-            background-position: left;
-        }
-
-        .work-5 {
-            background-image: url('../img/burger-queer.JPG');
-        }
-    }
-}
-
-.contact {
-    max-width: 80%;
-    height: 100vh;
-    margin: $margin;
-    @include flexbox2;
-    align-items: center;
-    justify-content: space-evenly;
-
-    section {
-        @include flexbox;
-        width: 100%;
-        height: 80%;
-        justify-content: space-between;
-        align-items: center;
-
-        .contact-items {
-            width: 50%;
-
-            ul {
-                list-style-type: none;
-                padding: 0;
-                height: 20em;
-                @include flexbox2;
-                justify-content: space-evenly;
-    
-                li {
-                    @include family-weight($font1, $font-weight3, $color1, 2em);
-                    display: flex;
-                    align-items: center;
-
-                    img {
-                        width: 1.5em;
-                        margin-right: 1em;
-                    }
-                }
-            }
-        }
-
-        h2 {
-            @include family-weight($font1, $font-weight2, $color1, 3em);
-            width: 50%;
-        }
+    img {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-self: end;
     }
 
     p {
-        @include family-weight($font2, $font-weight3, $color1, 1.2em);
+      @include family-weight($font2, $font-weight3, $color1, 1.4em);
+      text-align: center;
     }
+
+    .design-skills {
+      grid-column: 1 / 2;
+      grid-row: 2 / 5;
+      justify-self: end;
+    }
+
+    .frontend-skills {
+      grid-column: 3 / 4;
+      grid-row: 1 / 4;
+      padding: 7em 3em;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+
+      .title-frontend {
+        right: 0;
+      }
+    }
+  }
 }
 
-@import './mediaQueries';
+.portfolio {
+  max-width: 80%;
+  height: 100vh;
+  margin: $margin;
+  @include flexbox2;
+  align-items: center;
+  justify-content: space-evenly;
+
+  h2 {
+    @include family-weight($font1, $font-weight2, $color1, 3em);
+    align-self: flex-start;
+  }
+
+  .all-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include width-height(100%, 60vh);
+
+    .each-work {
+      display: flex;
+      @include width-height(32%, 45%);
+      background-color: $color4;
+      border-top-left-radius: 2em;
+      border-top-right-radius: 2em;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+
+      .all-btn-work {
+        display: flex;
+        width: 100%;
+        align-self: flex-end;
+
+        .btn-work {
+          border-style: none;
+          padding: 0;
+          @include width-height(50%, 2em);
+          outline: none;
+          cursor: pointer;
+          @include family-weight($font1, $font-weight2, $color, 1.4em);
+        }
+
+        .btn-docs {
+          background-color: $color2;
+        }
+
+        .btn-link {
+          background-color: $color3;
+        }
+      }
+    }
+
+    .work-1 {
+      background-image: url("../img/credit-card-validation.JPG");
+    }
+
+    .work-2 {
+      background-image: url("../img/data-lovers.JPG");
+    }
+
+    .work-3 {
+      background-image: url("../img/voz-amiga.JPG");
+    }
+
+    .work-4 {
+      background-image: url("../img/md-links.jpg");
+      background-position: left;
+    }
+
+    .work-5 {
+      background-image: url("../img/burger-queer.JPG");
+    }
+
+    .work-6 {
+      background-image: url("../img/winag.png");
+    }
+  }
+}
+
+.contact {
+  max-width: 80%;
+  height: 100vh;
+  margin: $margin;
+  @include flexbox2;
+  align-items: center;
+  justify-content: space-evenly;
+
+  section {
+    @include flexbox;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+    .contact-items {
+      width: 50%;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        height: 20em;
+        @include flexbox2;
+        justify-content: space-evenly;
+
+        li {
+          @include family-weight($font1, $font-weight3, $color1, 2em);
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 1.5em;
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+
+    h2 {
+      @include family-weight($font1, $font-weight2, $color1, 3em);
+      width: 50%;
+    }
+  }
+
+  p {
+    @include family-weight($font2, $font-weight3, $color1, 1.2em);
+  }
+}
+
+@import "./mediaQueries";
