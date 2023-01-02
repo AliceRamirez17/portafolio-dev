@@ -78,5 +78,5 @@ btnGithub.addEventListener("click", () => {
 });
 
 btnBehance.addEventListener("click", () => {
-  window.open("https://www.behance.net/thecatgirl", "_blank");
+  window.open("https://www.behance.net/aliceramirez", "_blank");
 });
