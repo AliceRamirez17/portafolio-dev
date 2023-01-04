@@ -7,6 +7,7 @@ const btnDocs6 = document.getElementById("btn-6");
 const btnDocs7 = document.getElementById("btn-7");
 const btnDocs9 = document.getElementById("btn-9");
 const btnDocs11 = document.getElementById("btn-11");
+const btnDocs13 = document.getElementById("btn-13");
 
 btnDocs1.addEventListener("click", () => {
   window.open(
