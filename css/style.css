@@ -519,7 +519,7 @@ body {
     width: 14em;
   }
   .portfolio .all-work .each-work {
-    height: 40%;
+    height: 150px;
   }
   .portfolio .all-work .each-work .all-btn-work .btn-docs {
     width: 60%;
