@@ -62,6 +62,10 @@ btnDocs11.addEventListener("click", () => {
   window.open("https://winagperu.org/", "_blank");
 });
 
+btnDocs13.addEventListener("click", () => {
+  window.open("https://www.tiendasmass.com.pe/", "_blank");
+});
+
 const btnLinkedin = document.getElementById("btnLinkedin");
 const btnGithub = document.getElementById("btnGithub");
 const btnBehance = document.getElementById("btnBehance");

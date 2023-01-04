@@ -417,6 +417,10 @@ body {
   background-image: url("../img/winag.png");
 }
 
+.portfolio .all-work .work-7 {
+  background-image: url("../img/mass.png");
+}
+
 .contact {
   max-width: 80%;
   height: 100vh;
