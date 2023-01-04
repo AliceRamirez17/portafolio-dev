@@ -2,20 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap");
 * {
   margin: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 12px;
-  background-color: black; }
+  background-color: black;
+}
 
 ::-webkit-scrollbar {
-  width: 1em; }
+  width: 1em;
+}
 
 ::-webkit-scrollbar-track {
-  background: black; }
+  background: black;
+}
 
 ::-webkit-scrollbar-thumb {
-  background: #333333; }
+  background: #333333;
+}
 
 .container-info {
   max-width: 80%;
@@ -23,89 +28,119 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+}
 
 .info {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
-  .info section {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-    .info section h1 {
-      font-family: "Aleo";
-      font-weight: 600;
-      color: white;
-      font-size: 4em; }
-    .info section h2 {
-      font-family: "Aleo";
-      font-weight: 400;
-      color: white;
-      font-size: 4.2em; }
-      .info section h2 span {
-        color: #c4a0cc; }
-      .info section h2 a {
-        color: #abd8c9; }
-    .info section h3 {
-      font-family: "Roboto", "sans-serif";
-      font-weight: 300;
-      color: white;
-      font-size: 2em; }
-    .info section ul {
-      width: 35%;
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding: 0; }
-      .info section ul img {
-        margin-bottom: 0.4em; }
-      .info section ul li {
-        font-family: "Roboto", "sans-serif";
-        font-weight: 300;
-        color: white;
-        font-size: 1em;
-        cursor: pointer; }
-  .info aside {
-    width: 40em;
-    height: 40em;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr); }
-    .info aside .circle-dotted {
-      width: 27em;
-      height: 27em;
-      border: 0.2em dashed white;
-      z-index: 1;
-      grid-column: 1 / 6;
-      grid-row: 3 / 8;
-      border-radius: 50%;
-      box-sizing: border-box; }
-    .info aside .circle-1 {
-      width: 2em;
-      height: 2em;
-      background-color: #abd8c9;
-      border-radius: 50%;
-      z-index: 2;
-      grid-column: 1 / 2;
-      grid-row: 8 / 9; }
-    .info aside .circle-2 {
-      width: 4em;
-      height: 4em;
-      background-color: #c4a0cc;
-      border-radius: 50%;
-      z-index: 3;
-      grid-column: 8 / 9;
-      grid-row: 2 / 3; }
-    .info aside .photo {
-      height: 100%;
-      grid-column: 2 / 9;
-      grid-row: 2 / 9; }
+  justify-content: space-between;
+}
+
+.info section {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.info section h1 {
+  font-family: "Aleo";
+  font-weight: 600;
+  color: white;
+  font-size: 4em;
+}
+
+.info section h2 {
+  font-family: "Aleo";
+  font-weight: 400;
+  color: white;
+  font-size: 4.2em;
+}
+
+.info section h2 span {
+  color: #c4a0cc;
+}
+
+.info section h2 a {
+  color: #abd8c9;
+}
+
+.info section h3 {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  color: white;
+  font-size: 2em;
+}
+
+.info section ul {
+  width: 35%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.info section ul img {
+  margin-bottom: 0.4em;
+}
+
+.info section ul li {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.info aside {
+  width: 40em;
+  height: 40em;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.info aside .circle-dotted {
+  width: 27em;
+  height: 27em;
+  border: 0.2em dashed white;
+  z-index: 1;
+  grid-column: 1 / 6;
+  grid-row: 3 / 8;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.info aside .circle-1 {
+  width: 2em;
+  height: 2em;
+  background-color: #abd8c9;
+  border-radius: 50%;
+  z-index: 2;
+  grid-column: 1 / 2;
+  grid-row: 8 / 9;
+}
+
+.info aside .circle-2 {
+  width: 4em;
+  height: 4em;
+  background-color: #c4a0cc;
+  border-radius: 50%;
+  z-index: 3;
+  grid-column: 8 / 9;
+  grid-row: 2 / 3;
+}
+
+.info aside .photo {
+  height: 100%;
+  grid-column: 2 / 9;
+  grid-row: 2 / 9;
+}
 
 .btn-about,
 .btn-contact-info,
@@ -117,13 +152,16 @@ body {
   font-size: 1.5em;
   margin: 0 auto;
   text-align: center;
-  text-decoration: none; }
-  .btn-about:hover,
-  .btn-contact-info:hover,
-  .btn-portfolio:hover,
-  .btn-skills:hover {
-    color: #c4a0cc;
-    transition: color, 0.6s ease 0.2s; }
+  text-decoration: none;
+}
+
+.btn-about:hover,
+.btn-contact-info:hover,
+.btn-portfolio:hover,
+.btn-skills:hover {
+  color: #c4a0cc;
+  transition: color, 0.6s ease 0.2s;
+}
 
 .about-me {
   display: flex;
@@ -131,61 +169,79 @@ body {
   max-width: 80%;
   height: 100vh;
   margin: 0 auto;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+}
 
 .about-container {
   height: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between; }
-  .about-container h2 {
-    width: 50%;
-    font-family: "Aleo";
-    font-weight: 600;
-    color: white;
-    font-size: 3em; }
-  .about-container section {
-    justify-content: center;
-    width: 50%; }
-    .about-container section p {
-      font-family: "Roboto", "sans-serif";
-      font-weight: 300;
-      color: white;
-      font-size: 1.4em;
-      line-height: 1.3em;
-      margin-bottom: 2em; }
-      .about-container section p span {
-        color: #c4a0cc; }
-    .about-container section .btn-cv-contact {
-      display: flex;
-      flex-direction: row;
-      width: 32em;
-      justify-content: space-between; }
-      .about-container section .btn-cv-contact .btn-cv {
-        border: none;
-        font-family: "Aleo";
-        font-weight: 600;
-        font-size: 1.5em;
-        padding: 0.5em 2em;
-        background-color: #c4a0cc;
-        color: black;
-        text-decoration: none;
-        cursor: pointer; }
-        .about-container section .btn-cv-contact .btn-cv:hover {
-          background-color: #885294;
-          color: white;
-          transition: background-color, color, 0.6s ease 0.2s; }
-      .about-container section .btn-cv-contact .btn-contact {
-        border: none;
-        font-family: "Aleo";
-        font-weight: 600;
-        font-size: 1.5em;
-        padding: 0.5em 2em;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-        cursor: pointer; }
+  justify-content: space-between;
+}
+
+.about-container h2 {
+  width: 50%;
+  font-family: "Aleo";
+  font-weight: 600;
+  color: white;
+  font-size: 3em;
+}
+
+.about-container section {
+  justify-content: center;
+  width: 50%;
+}
+
+.about-container section p {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  color: white;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  margin-bottom: 2em;
+}
+
+.about-container section p span {
+  color: #c4a0cc;
+}
+
+.about-container section .btn-cv-contact {
+  display: flex;
+  flex-direction: row;
+  width: 32em;
+  justify-content: space-between;
+}
+
+.about-container section .btn-cv-contact .btn-cv {
+  border: none;
+  font-family: "Aleo";
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 0.5em 2em;
+  background-color: #c4a0cc;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-container section .btn-cv-contact .btn-cv:hover {
+  background-color: #885294;
+  color: white;
+  transition: background-color, color, 0.6s ease 0.2s;
+}
+
+.about-container section .btn-cv-contact .btn-contact {
+  border: none;
+  font-family: "Aleo";
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 0.5em 2em;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .skills {
   max-width: 80%;
@@ -193,63 +249,82 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
-  .skills .all-skills {
-    display: grid;
-    grid-template-columns: 38% 24% 38%;
-    grid-template-rows: repeat(4, 1fr); }
-    .skills .all-skills .circle-skills {
-      position: relative;
-      width: 30em;
-      height: 30em;
-      background-color: transparent;
-      border: 0.2em solid white;
-      border-radius: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      box-sizing: border-box; }
-    .skills .all-skills h3 {
-      position: absolute;
-      top: 1em;
-      font-family: "Aleo";
-      font-weight: 400;
-      color: #abd8c9;
-      font-size: 3em;
-      background-color: black;
-      padding: 0.4em 0;
-      box-sizing: border-box; }
-    .skills .all-skills h2 {
-      font-family: "Aleo";
-      font-weight: 600;
-      color: white;
-      font-size: 3em;
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      justify-self: center; }
-    .skills .all-skills img {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      justify-self: center;
-      align-self: end; }
-    .skills .all-skills p {
-      font-family: "Roboto", "sans-serif";
-      font-weight: 300;
-      color: white;
-      font-size: 1.4em;
-      text-align: center; }
-    .skills .all-skills .design-skills {
-      grid-column: 1 / 2;
-      grid-row: 2 / 5;
-      justify-self: end; }
-    .skills .all-skills .frontend-skills {
-      grid-column: 3 / 4;
-      grid-row: 1 / 4;
-      padding: 7em 3em;
-      flex-wrap: wrap;
-      box-sizing: border-box; }
-      .skills .all-skills .frontend-skills .title-frontend {
-        right: 0; }
+  justify-content: space-evenly;
+}
+
+.skills .all-skills {
+  display: grid;
+  grid-template-columns: 38% 24% 38%;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.skills .all-skills .circle-skills {
+  position: relative;
+  width: 30em;
+  height: 30em;
+  background-color: transparent;
+  border: 0.2em solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.skills .all-skills h3 {
+  position: absolute;
+  top: 1em;
+  font-family: "Aleo";
+  font-weight: 400;
+  color: #abd8c9;
+  font-size: 3em;
+  background-color: black;
+  padding: 0.4em 0;
+  box-sizing: border-box;
+}
+
+.skills .all-skills h2 {
+  font-family: "Aleo";
+  font-weight: 600;
+  color: white;
+  font-size: 3em;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  justify-self: center;
+}
+
+.skills .all-skills img {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: end;
+}
+
+.skills .all-skills p {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.skills .all-skills .design-skills {
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+  justify-self: end;
+}
+
+.skills .all-skills .frontend-skills {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+  padding: 7em 3em;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.skills .all-skills .frontend-skills .title-frontend {
+  right: 0;
+}
 
 .portfolio {
   max-width: 80%;
@@ -258,62 +333,89 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; }
-  .portfolio h2 {
-    font-family: "Aleo";
-    font-weight: 600;
-    color: white;
-    font-size: 3em;
-    align-self: flex-start; }
-  .portfolio .all-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 60vh; }
-    .portfolio .all-work .each-work {
-      display: flex;
-      width: 32%;
-      height: 45%;
-      background-color: #c4c4c4;
-      border-top-left-radius: 2em;
-      border-top-right-radius: 2em;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top; }
-      .portfolio .all-work .each-work .all-btn-work {
-        display: flex;
-        width: 100%;
-        align-self: flex-end; }
-        .portfolio .all-work .each-work .all-btn-work .btn-work {
-          border-style: none;
-          padding: 0;
-          width: 50%;
-          height: 2em;
-          outline: none;
-          cursor: pointer;
-          font-family: "Aleo";
-          font-weight: 600;
-          color: black;
-          font-size: 1.4em; }
-        .portfolio .all-work .each-work .all-btn-work .btn-docs {
-          background-color: #c4a0cc; }
-        .portfolio .all-work .each-work .all-btn-work .btn-link {
-          background-color: #abd8c9; }
-    .portfolio .all-work .work-1 {
-      background-image: url("../img/credit-card-validation.JPG"); }
-    .portfolio .all-work .work-2 {
-      background-image: url("../img/data-lovers.JPG"); }
-    .portfolio .all-work .work-3 {
-      background-image: url("../img/voz-amiga.JPG"); }
-    .portfolio .all-work .work-4 {
-      background-image: url("../img/md-links.jpg");
-      background-position: left; }
-    .portfolio .all-work .work-5 {
-      background-image: url("../img/burger-queer.JPG"); }
-    .portfolio .all-work .work-6 {
-      background-image: url("../img/winag.png"); }
+  justify-content: space-evenly;
+}
+
+.portfolio h2 {
+  font-family: "Aleo";
+  font-weight: 600;
+  color: white;
+  font-size: 3em;
+  align-self: flex-start;
+}
+
+.portfolio .all-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.portfolio .all-work .each-work {
+  display: flex;
+  width: 32%;
+  height: 45%;
+  background-color: #c4c4c4;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.portfolio .all-work .each-work .all-btn-work {
+  display: flex;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.portfolio .all-work .each-work .all-btn-work .btn-work {
+  border-style: none;
+  padding: 0;
+  width: 50%;
+  height: 2em;
+  outline: none;
+  cursor: pointer;
+  font-family: "Aleo";
+  font-weight: 600;
+  color: black;
+  font-size: 1.4em;
+}
+
+.portfolio .all-work .each-work .all-btn-work .btn-docs {
+  background-color: #c4a0cc;
+}
+
+.portfolio .all-work .each-work .all-btn-work .btn-link {
+  background-color: #abd8c9;
+}
+
+.portfolio .all-work .work-1 {
+  background-image: url("../img/credit-card-validation.JPG");
+}
+
+.portfolio .all-work .work-2 {
+  background-image: url("../img/data-lovers.JPG");
+}
+
+.portfolio .all-work .work-3 {
+  background-image: url("../img/voz-amiga.JPG");
+}
+
+.portfolio .all-work .work-4 {
+  background-image: url("../img/md-links.jpg");
+  background-position: left;
+}
+
+.portfolio .all-work .work-5 {
+  background-image: url("../img/burger-queer.JPG");
+}
+
+.portfolio .all-work .work-6 {
+  background-image: url("../img/winag.png");
+}
 
 .contact {
   max-width: 80%;
@@ -322,249 +424,345 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; }
-  .contact section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 80%;
-    justify-content: space-between;
-    align-items: center; }
-    .contact section .contact-items {
-      width: 50%; }
-      .contact section .contact-items ul {
-        list-style-type: none;
-        padding: 0;
-        height: 20em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly; }
-        .contact section .contact-items ul li {
-          font-family: "Aleo";
-          font-weight: 300;
-          color: white;
-          font-size: 2em;
-          display: flex;
-          align-items: center; }
-          .contact section .contact-items ul li img {
-            width: 1.5em;
-            margin-right: 1em; }
-    .contact section h2 {
-      font-family: "Aleo";
-      font-weight: 600;
-      color: white;
-      font-size: 3em;
-      width: 50%; }
-  .contact p {
-    font-family: "Roboto", "sans-serif";
-    font-weight: 300;
-    color: white;
-    font-size: 1.2em; }
+  justify-content: space-evenly;
+}
+
+.contact section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact section .contact-items {
+  width: 50%;
+}
+
+.contact section .contact-items ul {
+  list-style-type: none;
+  padding: 0;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact section .contact-items ul li {
+  font-family: "Aleo";
+  font-weight: 300;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.contact section .contact-items ul li img {
+  width: 1.5em;
+  margin-right: 1em;
+}
+
+.contact section h2 {
+  font-family: "Aleo";
+  font-weight: 600;
+  color: white;
+  font-size: 3em;
+  width: 50%;
+}
+
+.contact p {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  color: white;
+  font-size: 1.2em;
+}
 
 @media (max-width: 1200px) {
   .info section h2 {
-    font-size: 3.2em; }
+    font-size: 3.2em;
+  }
   .info section h3 {
-    font-size: 1.6em; }
+    font-size: 1.6em;
+  }
   .info section ul {
-    width: 50%; }
+    width: 50%;
+  }
   .info aside {
     width: 30em;
-    height: 30em; }
-    .info aside .circle-dotted {
-      width: 22em;
-      height: 22em; }
+    height: 30em;
+  }
+  .info aside .circle-dotted {
+    width: 22em;
+    height: 22em;
+  }
   .skills .all-skills .circle-skills {
     width: 25em;
-    height: 25em; }
-    .skills .all-skills .circle-skills h3 {
-      font-size: 2.5em; }
-    .skills .all-skills .circle-skills p {
-      font-size: 1.3em; }
+    height: 25em;
+  }
+  .skills .all-skills .circle-skills h3 {
+    font-size: 2.5em;
+  }
+  .skills .all-skills .circle-skills p {
+    font-size: 1.3em;
+  }
   .skills .all-skills img {
-    width: 14em; }
+    width: 14em;
+  }
   .portfolio .all-work .each-work {
-    height: 40%; }
-    .portfolio .all-work .each-work .all-btn-work .btn-docs {
-      width: 60%; }
-    .portfolio .all-work .each-work .all-btn-work .btn-link {
-      width: 40%; } }
+    height: 40%;
+  }
+  .portfolio .all-work .each-work .all-btn-work .btn-docs {
+    width: 60%;
+  }
+  .portfolio .all-work .each-work .all-btn-work .btn-link {
+    width: 40%;
+  }
+}
 
 @media (max-width: 834px) {
   .info {
     height: 70vh;
-    flex-direction: column; }
-    .info section {
-      height: 50%;
-      justify-content: space-between; }
-      .info section h1 {
-        font-size: 2.5em; }
-      .info section h2 {
-        font-size: 3.5em; }
-      .info section h3 {
-        font-size: 1.4em; }
-      .info section ul {
-        width: 40%; }
-      .info section ul li {
-        font-size: 0.8em; }
-        .info section ul li img {
-          width: 60%; }
-    .info aside {
-      height: 18em;
-      width: 18em; }
-      .info aside .circle-dotted {
-        width: 14em;
-        height: 14em;
-        grid-row: 2 / 7; }
-      .info aside .photo {
-        grid-row: 1 / 8; }
-      .info aside .circle-1 {
-        width: 1.2em;
-        height: 1.2em; }
-      .info aside .circle-2 {
-        width: 2.5em;
-        height: 2.5em;
-        grid-row: 1 / 3; }
+    flex-direction: column;
+  }
+  .info section {
+    height: 50%;
+    justify-content: space-between;
+  }
+  .info section h1 {
+    font-size: 2.5em;
+  }
+  .info section h2 {
+    font-size: 3.5em;
+  }
+  .info section h3 {
+    font-size: 1.4em;
+  }
+  .info section ul {
+    width: 40%;
+  }
+  .info section ul li {
+    font-size: 0.8em;
+  }
+  .info section ul li img {
+    width: 60%;
+  }
+  .info aside {
+    height: 18em;
+    width: 18em;
+  }
+  .info aside .circle-dotted {
+    width: 14em;
+    height: 14em;
+    grid-row: 2 / 7;
+  }
+  .info aside .photo {
+    grid-row: 1 / 8;
+  }
+  .info aside .circle-1 {
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .info aside .circle-2 {
+    width: 2.5em;
+    height: 2.5em;
+    grid-row: 1 / 3;
+  }
   .about-container {
-    height: 70vh; }
-    .about-container h2 {
-      font-size: 2.5em; }
-    .about-container section {
-      height: 80%;
-      justify-content: space-between; }
-      .about-container section p {
-        height: 75%;
-        font-size: 1.2em;
-        margin: 0; }
-      .about-container section .btn-cv-contact {
-        height: 25%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 60%; }
-        .about-container section .btn-cv-contact .btn-cv, .about-container section .btn-cv-contact .btn-contact {
-          text-align: center;
-          padding: 0.5em 0; }
+    height: 70vh;
+  }
+  .about-container h2 {
+    font-size: 2.5em;
+  }
+  .about-container section {
+    height: 80%;
+    justify-content: space-between;
+  }
+  .about-container section p {
+    height: 75%;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .about-container section .btn-cv-contact {
+    height: 25%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+  }
+  .about-container section .btn-cv-contact .btn-cv, .about-container section .btn-cv-contact .btn-contact {
+    text-align: center;
+    padding: 0.5em 0;
+  }
   .skills .all-skills {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 70vh; }
-    .skills .all-skills h2 {
-      margin-top: 0.8em;
-      font-size: 2.5em; }
-    .skills .all-skills h2, .skills .all-skills img {
-      grid-column: 2 / 4;
-      grid-row: 2 / 3; }
-    .skills .all-skills img {
-      width: 10em;
-      align-self: stretch; }
-    .skills .all-skills .circle-skills {
-      width: 21em;
-      height: 21em; }
-      .skills .all-skills .circle-skills h3 {
-        font-size: 2em;
-        top: 0.5em; }
-      .skills .all-skills .circle-skills p {
-        font-size: 1.2em; }
-    .skills .all-skills .design-skills {
-      align-self: end; }
-    .skills .all-skills .frontend-skills {
-      grid-column: 4 / 5;
-      padding: 4em 2em; }
+    height: 70vh;
+  }
+  .skills .all-skills h2 {
+    margin-top: 0.8em;
+    font-size: 2.5em;
+  }
+  .skills .all-skills h2, .skills .all-skills img {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+  .skills .all-skills img {
+    width: 10em;
+    align-self: stretch;
+  }
+  .skills .all-skills .circle-skills {
+    width: 21em;
+    height: 21em;
+  }
+  .skills .all-skills .circle-skills h3 {
+    font-size: 2em;
+    top: 0.5em;
+  }
+  .skills .all-skills .circle-skills p {
+    font-size: 1.2em;
+  }
+  .skills .all-skills .design-skills {
+    align-self: end;
+  }
+  .skills .all-skills .frontend-skills {
+    grid-column: 4 / 5;
+    padding: 4em 2em;
+  }
   .portfolio h2 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+  }
   .portfolio .all-work .each-work {
     width: 45%;
-    height: 30%; }
+    height: 30%;
+  }
   .contact section h2 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+  }
   .contact section .contact-items ul li {
-    font-size: 1.5em; } }
+    font-size: 1.5em;
+  }
+}
 
 @media (max-width: 400px) {
   .btn-about, .btn-contact-info, .btn-portfolio, .btn-skills {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
   .container-info .info {
     width: 90%;
-    margin: 0 auto; }
-    .container-info .info section {
-      height: 50%; }
-      .container-info .info section h1 {
-        font-size: 2em; }
-      .container-info .info section h2 {
-        font-size: 2.6em; }
-      .container-info .info section h3 {
-        font-size: 1.2em; }
-      .container-info .info section ul {
-        width: 60%; }
-    .container-info .info aside {
-      width: 16em;
-      height: 16em; }
-      .container-info .info aside .circle-dotted {
-        width: 12em;
-        height: 12em; }
+    margin: 0 auto;
+  }
+  .container-info .info section {
+    height: 50%;
+  }
+  .container-info .info section h1 {
+    font-size: 2em;
+  }
+  .container-info .info section h2 {
+    font-size: 2.6em;
+  }
+  .container-info .info section h3 {
+    font-size: 1.2em;
+  }
+  .container-info .info section ul {
+    width: 60%;
+  }
+  .container-info .info aside {
+    width: 16em;
+    height: 16em;
+  }
+  .container-info .info aside .circle-dotted {
+    width: 12em;
+    height: 12em;
+  }
   .about-me .about-container {
-    flex-direction: column; }
-    .about-me .about-container h2 {
-      font-size: 2em;
-      width: 90%;
-      text-align: center; }
-    .about-me .about-container section {
-      width: 90%; }
-      .about-me .about-container section p {
-        font-size: 1em; }
-      .about-me .about-container section .btn-cv-contact {
-        width: 100%; }
+    flex-direction: column;
+  }
+  .about-me .about-container h2 {
+    font-size: 2em;
+    width: 90%;
+    text-align: center;
+  }
+  .about-me .about-container section {
+    width: 90%;
+  }
+  .about-me .about-container section p {
+    font-size: 1em;
+  }
+  .about-me .about-container section .btn-cv-contact {
+    width: 100%;
+  }
   .skills .all-skills {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 20% 40%; }
-    .skills .all-skills .circle-skills {
-      width: 16em;
-      height: 16em; }
-      .skills .all-skills .circle-skills h3 {
-        font-size: 1.5em;
-        top: 0; }
-      .skills .all-skills .circle-skills p {
-        font-size: 1em; }
-    .skills .all-skills .design-skills, .skills .all-skills .frontend-skills {
-      grid-column: 1 / 2; }
-    .skills .all-skills .design-skills {
-      grid-row: 1 / 2;
-      align-self: start; }
-    .skills .all-skills .frontend-skills {
-      grid-row: 3 / 4; }
-    .skills .all-skills h2, .skills .all-skills img {
-      grid-column: 1 / 2;
-      align-self: auto; }
-    .skills .all-skills h2 {
-      font-size: 2em;
-      margin: 0.5em; }
-    .skills .all-skills img {
-      margin-top: 3.5em;
-      width: 8em; }
+    grid-template-rows: 40% 20% 40%;
+  }
+  .skills .all-skills .circle-skills {
+    width: 16em;
+    height: 16em;
+  }
+  .skills .all-skills .circle-skills h3 {
+    font-size: 1.5em;
+    top: 0;
+  }
+  .skills .all-skills .circle-skills p {
+    font-size: 1em;
+  }
+  .skills .all-skills .design-skills, .skills .all-skills .frontend-skills {
+    grid-column: 1 / 2;
+  }
+  .skills .all-skills .design-skills {
+    grid-row: 1 / 2;
+    align-self: start;
+  }
+  .skills .all-skills .frontend-skills {
+    grid-row: 3 / 4;
+  }
+  .skills .all-skills h2, .skills .all-skills img {
+    grid-column: 1 / 2;
+    align-self: auto;
+  }
+  .skills .all-skills h2 {
+    font-size: 2em;
+    margin: 0.5em;
+  }
+  .skills .all-skills img {
+    margin-top: 3.5em;
+    width: 8em;
+  }
   .portfolio h2 {
     font-size: 2em;
-    align-self: center; }
+    align-self: center;
+  }
   .portfolio .all-work {
-    width: 90%; }
-    .portfolio .all-work .each-work {
-      background-size: contain; }
-      .portfolio .all-work .each-work .all-btn-work {
-        flex-direction: column; }
-        .portfolio .all-work .each-work .all-btn-work .btn-work {
-          width: 100%;
-          font-size: 1em; }
+    width: 90%;
+  }
+  .portfolio .all-work .each-work {
+    background-size: contain;
+  }
+  .portfolio .all-work .each-work .all-btn-work {
+    flex-direction: column;
+  }
+  .portfolio .all-work .each-work .all-btn-work .btn-work {
+    width: 100%;
+    font-size: 1em;
+  }
   .contact section {
     flex-direction: column;
     justify-content: center;
-    align-content: center; }
-    .contact section h2 {
-      text-align: center;
-      width: 100%; }
-    .contact section .contact-items {
-      width: 90%; }
-      .contact section .contact-items ul {
-        height: 15em; }
-        .contact section .contact-items ul li {
-          font-size: 1.2em; } }
+    align-content: center;
+  }
+  .contact section h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .contact section .contact-items {
+    width: 90%;
+  }
+  .contact section .contact-items ul {
+    height: 15em;
+  }
+  .contact section .contact-items ul li {
+    font-size: 1.2em;
+  }
+}
