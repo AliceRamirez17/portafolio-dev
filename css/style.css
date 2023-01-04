@@ -642,7 +642,7 @@ body {
   }
   .portfolio .all-work .each-work {
     width: 45%;
-    height: 30%;
+    height: 100px;
   }
   .contact section h2 {
     font-size: 2.5em;
@@ -745,9 +745,6 @@ body {
   }
   .portfolio .all-work {
     width: 90%;
-  }
-  .portfolio .all-work .each-work {
-    background-size: contain;
   }
   .portfolio .all-work .each-work .all-btn-work {
     flex-direction: column;
