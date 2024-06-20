@@ -8,6 +8,7 @@ const btnDocs7 = document.getElementById("btn-7");
 const btnDocs9 = document.getElementById("btn-9");
 const btnDocs11 = document.getElementById("btn-11");
 const btnDocs13 = document.getElementById("btn-13");
+const btnDocs14 = document.getElementById("btn-14");
 
 btnDocs1.addEventListener("click", () => {
   window.open(
@@ -64,6 +65,10 @@ btnDocs11.addEventListener("click", () => {
 });
 
 btnDocs13.addEventListener("click", () => {
+  window.open("https://devonvuejs.000webhostapp.com/mass/", "_blank");
+});
+
+btnDocs14.addEventListener("click", () => {
   window.open("https://www.tiendasmass.com.pe/", "_blank");
 });
 
