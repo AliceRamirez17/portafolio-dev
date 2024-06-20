@@ -1,5 +1,3 @@
-const btnDocs1 = document.getElementById("btn-1");
-const btnDocs2 = document.getElementById("btn-2");
 const btnDocs3 = document.getElementById("btn-3");
 const btnDocs4 = document.getElementById("btn-4");
 const btnDocs5 = document.getElementById("btn-5");
@@ -9,20 +7,6 @@ const btnDocs9 = document.getElementById("btn-9");
 const btnDocs11 = document.getElementById("btn-11");
 const btnDocs13 = document.getElementById("btn-13");
 const btnDocs14 = document.getElementById("btn-14");
-
-btnDocs1.addEventListener("click", () => {
-  window.open(
-    "https://github.com/AliceRamirez17/LIM012-card-validation",
-    "_blank"
-  );
-});
-
-btnDocs2.addEventListener("click", () => {
-  window.open(
-    "https://aliceramirez17.github.io/LIM012-card-validation/src/",
-    "_blank"
-  );
-});
 
 btnDocs3.addEventListener("click", () => {
   window.open("https://github.com/AliceRamirez17/LIM012-data-lovers", "_blank");
@@ -51,13 +35,6 @@ btnDocs6.addEventListener("click", () => {
 
 btnDocs7.addEventListener("click", () => {
   window.open("https://aliceramirez17.github.io/LIM012-fe-md-links/", "_blank");
-});
-
-btnDocs9.addEventListener("click", () => {
-  window.open(
-    "https://github.com/AliceRamirez17/LIM012-fe-burger-queen-api-client/tree/wip-alice",
-    "_blank"
-  );
 });
 
 btnDocs11.addEventListener("click", () => {
