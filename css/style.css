@@ -38,43 +38,36 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .info section {
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 .info section h1 {
   font-family: "Aleo";
   font-weight: 600;
   color: white;
   font-size: 4em;
 }
-
 .info section h2 {
   font-family: "Aleo";
   font-weight: 400;
   color: white;
   font-size: 4.2em;
 }
-
 .info section h2 span {
   color: #c4a0cc;
 }
-
 .info section h2 a {
   color: #abd8c9;
 }
-
 .info section h3 {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
   color: white;
   font-size: 2em;
 }
-
 .info section ul {
   width: 35%;
   list-style-type: none;
@@ -84,11 +77,9 @@ body {
   align-items: flex-end;
   padding: 0;
 }
-
 .info section ul img {
   margin-bottom: 0.4em;
 }
-
 .info section ul li {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
@@ -96,7 +87,6 @@ body {
   font-size: 1em;
   cursor: pointer;
 }
-
 .info aside {
   width: 40em;
   height: 40em;
@@ -104,42 +94,38 @@ body {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
 }
-
 .info aside .circle-dotted {
   width: 27em;
   height: 27em;
   border: 0.2em dashed white;
   z-index: 1;
-  grid-column: 1 / 6;
-  grid-row: 3 / 8;
+  grid-column: 1/6;
+  grid-row: 3/8;
   border-radius: 50%;
   box-sizing: border-box;
 }
-
 .info aside .circle-1 {
   width: 2em;
   height: 2em;
   background-color: #abd8c9;
   border-radius: 50%;
   z-index: 2;
-  grid-column: 1 / 2;
-  grid-row: 8 / 9;
+  grid-column: 1/2;
+  grid-row: 8/9;
 }
-
 .info aside .circle-2 {
   width: 4em;
   height: 4em;
   background-color: #c4a0cc;
   border-radius: 50%;
   z-index: 3;
-  grid-column: 8 / 9;
-  grid-row: 2 / 3;
+  grid-column: 8/9;
+  grid-row: 2/3;
 }
-
 .info aside .photo {
   height: 100%;
-  grid-column: 2 / 9;
-  grid-row: 2 / 9;
+  grid-column: 2/9;
+  grid-row: 2/9;
 }
 
 .btn-about,
@@ -154,7 +140,6 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
 .btn-about:hover,
 .btn-contact-info:hover,
 .btn-portfolio:hover,
@@ -179,7 +164,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 .about-container h2 {
   width: 50%;
   font-family: "Aleo";
@@ -187,12 +171,10 @@ body {
   color: white;
   font-size: 3em;
 }
-
 .about-container section {
   justify-content: center;
   width: 50%;
 }
-
 .about-container section p {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
@@ -201,18 +183,15 @@ body {
   line-height: 1.3em;
   margin-bottom: 2em;
 }
-
 .about-container section p span {
   color: #c4a0cc;
 }
-
 .about-container section .btn-cv-contact {
   display: flex;
   flex-direction: row;
   width: 32em;
   justify-content: space-between;
 }
-
 .about-container section .btn-cv-contact .btn-cv {
   border: none;
   font-family: "Aleo";
@@ -224,13 +203,11 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-
 .about-container section .btn-cv-contact .btn-cv:hover {
   background-color: #885294;
   color: white;
   transition: background-color, color, 0.6s ease 0.2s;
 }
-
 .about-container section .btn-cv-contact .btn-contact {
   border: none;
   font-family: "Aleo";
@@ -251,13 +228,11 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 .skills .all-skills {
   display: grid;
   grid-template-columns: 38% 24% 38%;
   grid-template-rows: repeat(4, 1fr);
 }
-
 .skills .all-skills .circle-skills {
   position: relative;
   width: 30em;
@@ -270,7 +245,6 @@ body {
   justify-content: center;
   box-sizing: border-box;
 }
-
 .skills .all-skills h3 {
   position: absolute;
   top: 1em;
@@ -282,24 +256,21 @@ body {
   padding: 0.4em 0;
   box-sizing: border-box;
 }
-
 .skills .all-skills h2 {
   font-family: "Aleo";
   font-weight: 600;
   color: white;
   font-size: 3em;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-column: 2/3;
+  grid-row: 3/4;
   justify-self: center;
 }
-
 .skills .all-skills img {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-column: 2/3;
+  grid-row: 3/4;
   justify-self: center;
   align-self: end;
 }
-
 .skills .all-skills p {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
@@ -307,21 +278,18 @@ body {
   font-size: 1.4em;
   text-align: center;
 }
-
 .skills .all-skills .design-skills {
-  grid-column: 1 / 2;
-  grid-row: 2 / 5;
+  grid-column: 1/2;
+  grid-row: 2/5;
   justify-self: end;
 }
-
 .skills .all-skills .frontend-skills {
-  grid-column: 3 / 4;
-  grid-row: 1 / 4;
+  grid-column: 3/4;
+  grid-row: 1/4;
   padding: 7em 3em;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-
 .skills .all-skills .frontend-skills .title-frontend {
   right: 0;
 }
@@ -334,7 +302,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .portfolio h2 {
   font-family: "Aleo";
   font-weight: 600;
@@ -343,18 +310,16 @@ body {
   align-self: flex-start;
   margin-bottom: 30px;
 }
-
 .portfolio .all-work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
+  gap: 30px;
 }
-
 .portfolio .all-work .each-work {
   display: flex;
-  width: 32%;
+  width: 100%;
   height: 180px;
   background-color: #c4c4c4;
   border-top-left-radius: 2em;
@@ -362,15 +327,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  margin-bottom: 30px;
 }
-
 .portfolio .all-work .each-work .all-btn-work {
   display: flex;
   width: 100%;
   align-self: flex-end;
 }
-
 .portfolio .all-work .each-work .all-btn-work .btn-work {
   border-style: none;
   padding: 0;
@@ -383,52 +345,46 @@ body {
   color: black;
   font-size: 1.4em;
 }
-
 .portfolio .all-work .each-work .all-btn-work .btn-docs {
   background-color: #c4a0cc;
 }
-
 .portfolio .all-work .each-work .all-btn-work .btn-link {
   background-color: #abd8c9;
 }
-
 .portfolio .all-work .each-work:last-child {
   margin-bottom: 0;
 }
-
 .portfolio .all-work .work-1 {
   background-image: url("../img/credit-card-validation.JPG");
 }
-
 .portfolio .all-work .work-2 {
   background-image: url("../img/data-lovers.JPG");
 }
-
 .portfolio .all-work .work-3 {
   background-image: url("../img/voz-amiga.JPG");
 }
-
 .portfolio .all-work .work-4 {
   background-image: url("../img/md-links.jpg");
   background-position: left;
 }
-
 .portfolio .all-work .work-5 {
   background-image: url("../img/burger-queer.JPG");
 }
-
 .portfolio .all-work .work-6 {
-  background-image: url("../img/winag.png");
+  background-image: url("../img/organic-beauty.jpg");
 }
-
-.portfolio .all-work .work-7 {
-  background-image: url("../img/mass.png");
-}
-
 .portfolio .all-work .work-8 {
   background-image: url("../img/mass-new.png");
 }
-
+.portfolio .all-work .work-9 {
+  background-image: url("../img/lexington.jpg");
+}
+.portfolio .all-work .work-10 {
+  background-image: url("../img/kiviu.jpg");
+}
+.portfolio .all-work .work-11 {
+  background-image: url("../img/cuando-jugamos.jpg");
+}
 
 .contact {
   max-width: 80%;
@@ -439,7 +395,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .contact section {
   display: flex;
   flex-direction: row;
@@ -448,11 +403,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .contact section .contact-items {
   width: 50%;
 }
-
 .contact section .contact-items ul {
   list-style-type: none;
   padding: 0;
@@ -461,7 +414,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 .contact section .contact-items ul li {
   font-family: "Aleo";
   font-weight: 300;
@@ -470,12 +422,10 @@ body {
   display: flex;
   align-items: center;
 }
-
 .contact section .contact-items ul li img {
   width: 1.5em;
   margin-right: 1em;
 }
-
 .contact section h2 {
   font-family: "Aleo";
   font-weight: 600;
@@ -483,7 +433,6 @@ body {
   font-size: 3em;
   width: 50%;
 }
-
 .contact p {
   font-family: "Roboto", "sans-serif";
   font-weight: 300;
@@ -509,6 +458,7 @@ body {
     width: 22em;
     height: 22em;
   }
+
   .skills .all-skills .circle-skills {
     width: 25em;
     height: 25em;
@@ -522,6 +472,7 @@ body {
   .skills .all-skills img {
     width: 14em;
   }
+
   .portfolio .all-work .each-work {
     height: 150px;
   }
@@ -532,7 +483,6 @@ body {
     width: 40%;
   }
 }
-
 @media (max-width: 834px) {
   .info {
     height: 70vh;
@@ -567,10 +517,10 @@ body {
   .info aside .circle-dotted {
     width: 14em;
     height: 14em;
-    grid-row: 2 / 7;
+    grid-row: 2/7;
   }
   .info aside .photo {
-    grid-row: 1 / 8;
+    grid-row: 1/8;
   }
   .info aside .circle-1 {
     width: 1.2em;
@@ -579,8 +529,9 @@ body {
   .info aside .circle-2 {
     width: 2.5em;
     height: 2.5em;
-    grid-row: 1 / 3;
+    grid-row: 1/3;
   }
+
   .about-container {
     height: 70vh;
   }
@@ -606,6 +557,7 @@ body {
     text-align: center;
     padding: 0.5em 0;
   }
+
   .skills .all-skills {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -616,8 +568,8 @@ body {
     font-size: 2.5em;
   }
   .skills .all-skills h2, .skills .all-skills img {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-column: 2/4;
+    grid-row: 2/3;
   }
   .skills .all-skills img {
     width: 10em;
@@ -638,16 +590,21 @@ body {
     align-self: end;
   }
   .skills .all-skills .frontend-skills {
-    grid-column: 4 / 5;
+    grid-column: 4/5;
     padding: 4em 2em;
   }
+
   .portfolio h2 {
     font-size: 2.5em;
   }
+  .portfolio .all-work {
+    grid-template-columns: 1fr 1fr;
+  }
   .portfolio .all-work .each-work {
-    width: 45%;
+    width: 100%;
     height: 100px;
   }
+
   .contact section h2 {
     font-size: 2.5em;
   }
@@ -655,11 +612,11 @@ body {
     font-size: 1.5em;
   }
 }
-
 @media (max-width: 400px) {
   .btn-about, .btn-contact-info, .btn-portfolio, .btn-skills {
     font-size: 1.2em;
   }
+
   .container-info .info {
     width: 90%;
     margin: 0 auto;
@@ -687,6 +644,7 @@ body {
     width: 12em;
     height: 12em;
   }
+
   .about-me .about-container {
     flex-direction: column;
   }
@@ -704,6 +662,7 @@ body {
   .about-me .about-container section .btn-cv-contact {
     width: 100%;
   }
+
   .skills .all-skills {
     width: 90%;
     margin: 0 auto;
@@ -722,17 +681,17 @@ body {
     font-size: 1em;
   }
   .skills .all-skills .design-skills, .skills .all-skills .frontend-skills {
-    grid-column: 1 / 2;
+    grid-column: 1/2;
   }
   .skills .all-skills .design-skills {
-    grid-row: 1 / 2;
+    grid-row: 1/2;
     align-self: start;
   }
   .skills .all-skills .frontend-skills {
-    grid-row: 3 / 4;
+    grid-row: 3/4;
   }
   .skills .all-skills h2, .skills .all-skills img {
-    grid-column: 1 / 2;
+    grid-column: 1/2;
     align-self: auto;
   }
   .skills .all-skills h2 {
@@ -743,12 +702,10 @@ body {
     margin-top: 3.5em;
     width: 8em;
   }
+
   .portfolio h2 {
     font-size: 2em;
     align-self: center;
-  }
-  .portfolio .all-work {
-    width: 90%;
   }
   .portfolio .all-work .each-work .all-btn-work {
     flex-direction: column;
@@ -757,6 +714,7 @@ body {
     width: 100%;
     font-size: 1em;
   }
+
   .contact section {
     flex-direction: column;
     justify-content: center;

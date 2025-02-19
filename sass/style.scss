@@ -337,24 +337,27 @@ body {
   }
 
   .all-work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: center;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     // @include width-height(100%, 60vh);
     margin-bottom: 30px;
+    gap: 30px;
 
     .each-work {
       display: flex;
-      @include width-height(32%, 180px);
+      @include width-height(100%, 180px);
       background-color: $color4;
       border-top-left-radius: 2em;
       border-top-right-radius: 2em;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
 
       .all-btn-work {
         display: flex;
@@ -406,15 +409,23 @@ body {
     }
 
     .work-6 {
-      background-image: url("../img/winag.png");
-    }
-
-    .work-7 {
-      background-image: url("../img/mass.png");
+      background-image: url("../img/organic-beauty.jpg");
     }
 
     .work-8 {
       background-image: url("../img/mass-new.png");
+    }
+
+    .work-9 {
+      background-image: url("../img/lexington.jpg");
+    }
+
+    .work-10 {
+      background-image: url("../img/kiviu.jpg");
+    }
+
+    .work-11 {
+      background-image: url("../img/cuando-jugamos.jpg");
     }
   }
 }
