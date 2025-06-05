@@ -75,7 +75,7 @@ const btnBehance = document.getElementById("btnBehance");
 
 btnLinkedin.addEventListener("click", () => {
   window.open(
-    "https://www.linkedin.com/in/alice-ram%C3%ADrez-developer/",
+    "https://www.linkedin.com/in/alice-ramirez-developer/",
     "_blank"
   );
 });
