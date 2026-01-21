@@ -385,6 +385,9 @@ body {
 .portfolio .all-work .work-11 {
   background-image: url("../img/cuando-jugamos.jpg");
 }
+.portfolio .all-work .work-12 {
+  background-image: url("../img/mocicc.png");
+}
 
 .contact {
   max-width: 80%;

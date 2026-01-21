@@ -11,6 +11,7 @@ const btnDocs14 = document.getElementById("btn-14");
 const btnDocs15 = document.getElementById("btn-15");
 const btnDocs16 = document.getElementById("btn-16");
 const btnDocs17 = document.getElementById("btn-17");
+const btnDocs18 = document.getElementById("btn-18");
 
 btnDocs3.addEventListener("click", () => {
   window.open("https://github.com/AliceRamirez17/LIM012-data-lovers", "_blank");
@@ -67,6 +68,10 @@ btnDocs16.addEventListener("click", () => {
 
 btnDocs17.addEventListener("click", () => {
   window.open("https://cuandojugamos.com/", "_blank");
+});
+
+btnDocs18.addEventListener("click", () => {
+  window.open("https://mocicc.pe/", "_blank");
 });
 
 const btnLinkedin = document.getElementById("btnLinkedin");
